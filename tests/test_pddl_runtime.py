@@ -46,3 +46,22 @@ def test_real_reset_returns_full_initial_observation(game):
     assert env.steps == 0
     assert env.reward == 0
 
+
+@pytest.mark.parametrize('game,actions', [
+    ('blockworld',['unstack b2 b3','putdown b2','unstack b3 b1','putdown b3',
+                   'pickup b2','stack b2 b1','pickup b3','stack b3 b2']),
+    ('gripper',['pick ball1 rooma left','pick ball2 rooma right','move rooma roomb',
+                'drop ball1 roomb left','drop ball2 roomb right','move roomb rooma',
+                'pick ball3 rooma left','pick ball4 rooma right','move rooma roomb',
+                'drop ball3 roomb left','drop ball4 roomb right'])])
+def test_known_valid_plan_reaches_true_environment_goal(game,actions):
+    """Check evaluator liveness; these manual plans never enter experiment memory."""
+    from envs import get_env
+    env=get_env('pddl',None,30)
+    env.set_env({'game_name':game,'problem_index':0})
+    for action in actions:
+        _,reward,done=env.step(action)
+        assert reward >= 0
+    assert done is True
+    assert env.feedback()[:2] == (1.0,True)
+

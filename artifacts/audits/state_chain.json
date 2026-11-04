@@ -1,0 +1,13 @@
+{
+  "audit_kind": "offline synthetic characterization, not benchmark result",
+  "pop_state": {
+    "before": 2,
+    "after": 2,
+    "negative_step_still_present": true
+  },
+  "serialization": {
+    "serialized_states": 2,
+    "restored_iterable_states": 1
+  },
+  "modified_in_reproduction": false
+}

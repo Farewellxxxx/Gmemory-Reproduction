@@ -1,0 +1,30 @@
+{
+  "upstream_commit": "7b581c51d993bd600df14691d101d7e601040cc6",
+  "provider": "ChatAnywhere",
+  "provider_group": "default (user-selected, not independently verified)",
+  "base_url": "https://api.chatanywhere.tech/v1",
+  "model": "gpt-4o-mini",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "seed": 42,
+  "domains": [
+    "gripper"
+  ],
+  "per_domain": 6,
+  "max_steps": 90,
+  "few_shots": 1,
+  "successful_topk": 1,
+  "failed_topk": 0,
+  "insights_topk": 3,
+  "threshold": 0.0,
+  "hop": 1,
+  "use_projector": true,
+  "start_insights_threshold": 5,
+  "rounds_per_insights": 5,
+  "insights_point_num": 5,
+  "budget_ca": 50,
+  "max_hours": 6,
+  "input_ca_per_million": 1.05,
+  "output_ca_per_million": 4.2,
+  "price_source": "https://github.com/chatanywhere/GPT_API_free/blob/main/README.md",
+  "protocol": "Post-hoc diagnostic registered after first 10 main GMemory tasks had no success: first six official gripper problems, max_steps 90, all other settings unchanged, fresh independent memories in both arms. Not pooled with the 30-step main experiment."
+}
