@@ -2,7 +2,7 @@
 
 这里保存最终证据核验、总用量账本与检查记录。它们检验记录是否一致，不证明模型方法有效，也不代表平台实际账单。
 
-仓库的 `.gitattributes` 对 `artifacts/` 禁用换行转换，避免 Windows 自动将 LF 改成 CRLF 后造成哈希不匹配。这个问题已在独立临时 Git 仓库中先复现、再验证修复，记录见 `eol_preservation.json`。
+仓库的 `.gitattributes` 对 `artifacts/` 禁用换行转换，保留生成时的原始字节，避免 LF/CRLF 转换造成哈希不匹配。已跟踪的旧文件另通过 `git add --renormalize artifacts` 刷新索引。独立 Git 检查覆盖 LF、CRLF 两种文件及 `core.autocrlf=true/false` 两种设置，记录见 `eol_preservation.json`；实际仓库重新检出的证据也通过哈希核对。
 
 在仓库根目录的 Python 环境运行下面的代码即可重新检查所有已导出文件哈希，无需安装模型或提供 API Key：
 
