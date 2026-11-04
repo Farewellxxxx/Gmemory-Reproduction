@@ -1,0 +1,7 @@
+{
+  "tracked_files_checked": 916,
+  "history_blobs_checked": 1002,
+  "credential_like_matches": [],
+  "scope": "sk-prefixed credentials, gzip contents included; one explicit synthetic test dummy excluded",
+  "scanned_commit": "e2f84a008318eccd9c77431afebdedf34362b70a"
+}

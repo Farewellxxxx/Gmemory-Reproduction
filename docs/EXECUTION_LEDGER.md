@@ -61,3 +61,7 @@ Final: Ruling: reload asserts record/metadata/rule equality and graph counts, wi
 Final: Ruling: validate PDDL only; optional benchmark imports remain outside tested scope — matches the authorized concrete reproduction — cost if wrong: other benchmarks may need separate adaptation.
 Final: Ruling: post-73a77d3 changes are validation inventory, executed teaching-example metadata, review/publication records and plan status; verify them locally and scan before publication without another full review — no experiment code/config changes — cost if wrong: those documentation additions are outside the independent reviewed commit range.
 Final: deferred minors: none. No material fix pass required.
+
+Published: fast-forwarded local main and non-force pushed origin/main; remote SHA e2f84a008318eccd9c77431afebdedf34362b70a verified equal at 2026-11-04T22:36:31UTC. GitHub connector read REPORT_zh.md successfully. Final source/tests/config unchanged since review; publication bookkeeping follows in a separate commit. Post-commit credential-format scan: 916 tracked files, 1002 history blobs, zero matches. Local clone, venv, caches, experiment state and scratch ledger retained as user requested.
+Task 4: complete (commits 73a77d3..e2f84a0, tests: python -m repro.check_publish → })
+Cleanup verified: stopped only the identity-checked reproduction keep-awake PID37968 after publication. No python repro.run or repro.keep_awake process remains; no permanent power settings were changed. All paid model runs ended before original deadline.

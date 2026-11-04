@@ -10,6 +10,7 @@
 - 安装日志在父工作区 `tmp/gmemory-install-*.log`；模型下载日志为 `tmp/gmemory-download-embedding.log`。
 - 首轮实验共用 `runs/budget.json`，截至北京时间 2026-11-05 08:13:04。
 - 首次中断试跑为 `runs/gmemory`；最终配对重新从空记忆开始，目录为 `runs/primary-gmemory`、`runs/primary-no-memory`。两次之间不拼接成绩。
+- 独立补充诊断为 `runs/diagnostic-gmemory`、`runs/diagnostic-no-memory`。四组正式运行均已完成，最后一组结束于北京时间 06:23；旧试跑保留中断状态，不是待恢复的当前任务。
 - `repro.keep_awake` 临时请求 Windows 保持系统唤醒，实验结束或截止时释放；不修改电源计划。
 
 ## 异常处理
