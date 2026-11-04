@@ -1,0 +1,107 @@
+{
+  "status": "interrupted",
+  "completed_tasks": 19,
+  "successes": 2,
+  "success_rate": 0.10526315789473684,
+  "mean_progress_reward": 0.2890350877192982,
+  "environment_steps": 357,
+  "agent_steps": 556,
+  "thought_steps": 199,
+  "query_steps": 104,
+  "physical_action_attempts": 253,
+  "invalid_physical_actions": 75,
+  "role_action_counts": {
+    "solver": 548,
+    "ground_truth": 8
+  },
+  "api_calls": 671,
+  "api_errors": 1,
+  "unresolved_calls": 1,
+  "unresolved_reserved_ca": 0.01781535,
+  "finish_reasons": {
+    "stop": 668,
+    "length": 2,
+    "unreported": 1
+  },
+  "prompt_tokens": 1929632,
+  "completion_tokens": 25771,
+  "estimated_ca": 2.134351800000002,
+  "api_seconds": 2948.4410000000016,
+  "by_purpose": {
+    "project_insights": {
+      "calls": 40,
+      "prompt_tokens": 6644,
+      "completion_tokens": 8519,
+      "estimated_ca": 0.04275600000000001,
+      "seconds": 252.469
+    },
+    "agent_action": {
+      "calls": 576,
+      "prompt_tokens": 1805172,
+      "completion_tokens": 8452,
+      "estimated_ca": 1.9309290000000017,
+      "seconds": 2398.5160000000014
+    },
+    "_extract_mas_message": {
+      "calls": 19,
+      "prompt_tokens": 44260,
+      "completion_tokens": 3865,
+      "estimated_ca": 0.062706,
+      "seconds": 111.613
+    },
+    "_detect_mistakes": {
+      "calls": 17,
+      "prompt_tokens": 31953,
+      "completion_tokens": 2737,
+      "estimated_ca": 0.04504605000000001,
+      "seconds": 88.781
+    },
+    "retrieve_memory": {
+      "calls": 9,
+      "prompt_tokens": 17036,
+      "completion_tokens": 1194,
+      "estimated_ca": 0.0229026,
+      "seconds": 47.719
+    },
+    "_finetune_insights": {
+      "calls": 10,
+      "prompt_tokens": 24567,
+      "completion_tokens": 1004,
+      "estimated_ca": 0.030012150000000005,
+      "seconds": 49.343
+    }
+  },
+  "by_domain": {
+    "blockworld": {
+      "tasks": 6,
+      "successes": 0,
+      "mean_reward": 0.2777777777777778
+    },
+    "gripper": {
+      "tasks": 6,
+      "successes": 1,
+      "mean_reward": 0.4708333333333334
+    },
+    "barman": {
+      "tasks": 6,
+      "successes": 0,
+      "mean_reward": 0.0
+    },
+    "tyreworld": {
+      "tasks": 1,
+      "successes": 1,
+      "mean_reward": 1.0
+    }
+  },
+  "memory_events": {
+    "retrieval": 20,
+    "projection": 40,
+    "add_memory_begin": 19,
+    "add_memory_end": 19,
+    "finetune_insights_begin": 3,
+    "finetune_insights_end": 3
+  },
+  "retrievals_with_successful_history": 8,
+  "retrievals_with_insights": 5,
+  "projections_with_empty_input": 30
+}

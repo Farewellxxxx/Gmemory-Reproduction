@@ -1,0 +1,114 @@
+{
+  "annotation_domain_order": [
+    "gripper",
+    "blockworld",
+    "barman",
+    "tyreworld"
+  ],
+  "loader_domain_order": [
+    "barman",
+    "blockworld",
+    "gripper",
+    "tyreworld"
+  ],
+  "selected_tasks_checked": 24,
+  "mismatches": [
+    {
+      "task": {
+        "game_name": "gripper",
+        "problem_index": 0,
+        "difficulty": "hard"
+      },
+      "annotation_difficulty_by_domain_position": "easy"
+    },
+    {
+      "task": {
+        "game_name": "gripper",
+        "problem_index": 1,
+        "difficulty": "hard"
+      },
+      "annotation_difficulty_by_domain_position": "easy"
+    },
+    {
+      "task": {
+        "game_name": "gripper",
+        "problem_index": 2,
+        "difficulty": "hard"
+      },
+      "annotation_difficulty_by_domain_position": "easy"
+    },
+    {
+      "task": {
+        "game_name": "gripper",
+        "problem_index": 3,
+        "difficulty": "hard"
+      },
+      "annotation_difficulty_by_domain_position": "easy"
+    },
+    {
+      "task": {
+        "game_name": "gripper",
+        "problem_index": 4,
+        "difficulty": "hard"
+      },
+      "annotation_difficulty_by_domain_position": "easy"
+    },
+    {
+      "task": {
+        "game_name": "gripper",
+        "problem_index": 5,
+        "difficulty": "hard"
+      },
+      "annotation_difficulty_by_domain_position": "easy"
+    },
+    {
+      "task": {
+        "game_name": "barman",
+        "problem_index": 0,
+        "difficulty": "easy"
+      },
+      "annotation_difficulty_by_domain_position": "hard"
+    },
+    {
+      "task": {
+        "game_name": "barman",
+        "problem_index": 1,
+        "difficulty": "easy"
+      },
+      "annotation_difficulty_by_domain_position": "hard"
+    },
+    {
+      "task": {
+        "game_name": "barman",
+        "problem_index": 2,
+        "difficulty": "easy"
+      },
+      "annotation_difficulty_by_domain_position": "hard"
+    },
+    {
+      "task": {
+        "game_name": "barman",
+        "problem_index": 3,
+        "difficulty": "easy"
+      },
+      "annotation_difficulty_by_domain_position": "hard"
+    },
+    {
+      "task": {
+        "game_name": "barman",
+        "problem_index": 4,
+        "difficulty": "easy"
+      },
+      "annotation_difficulty_by_domain_position": "hard"
+    },
+    {
+      "task": {
+        "game_name": "barman",
+        "problem_index": 5,
+        "difficulty": "easy"
+      },
+      "annotation_difficulty_by_domain_position": "hard"
+    }
+  ],
+  "scope": "Metadata audit only. Difficulty is not used for selecting PDDL files, prompts or scoring in this run."
+}

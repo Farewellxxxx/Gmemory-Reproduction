@@ -50,3 +50,13 @@ def test_summary_separates_thoughts_queries_and_invalid_physical_actions(tmp_pat
     assert result['physical_action_attempts']==2
     assert result['invalid_physical_actions']==1
     assert result['role_action_counts']=={'solver':3,'ground_truth':1}
+
+
+def test_pair_validation_rejects_changed_pddl_file_despite_same_task_identifier():
+    from repro.analyze import validate_episode_inputs
+    first=[dict(task_id=0,task=dict(game_name='gripper',problem_index=0),task_main='move ball',
+                domain_files=dict(problem_file=dict(path='problem.pddl',sha256='original')))]
+    validate_episode_inputs(first,first)
+    second=[dict(first[0],domain_files=dict(problem_file=dict(path='problem.pddl',sha256='modified')))]
+    with pytest.raises(ValueError,match='domain_files'):
+        validate_episode_inputs(first,second)

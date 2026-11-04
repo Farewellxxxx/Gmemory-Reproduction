@@ -1,0 +1,5 @@
+{
+  "status": "interrupted",
+  "time_utc": "2026-11-04T19:25:49.943239+00:00",
+  "reason": "API interrupted (InternalServerError); reservation retained"
+}

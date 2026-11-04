@@ -1,6 +1,6 @@
 # GMemory Reproduction Implementation Plan
 
-> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [x]`) syntax for tracking.
 
 **Goal:** Run real PDDL + AutoGen + GMemory and matched no-memory experiments with inspectable traces and Chinese teaching materials.
 
@@ -26,23 +26,23 @@
 ### Task 1: Reproducible environment and upstream compatibility
 **Files:** `.gitignore`, `requirements-repro.txt`, `tests/test_pddl_runtime.py`, minimal files under `tasks/envs/` if required.
 **Interfaces:** Produces real `PDDLEnv.set_env(task)` and `step(action)` behavior and an isolated Python interpreter.
-- [ ] Inspect imports, data and environment action/reset semantics; run original smoke check and record failures before patching.
-- [ ] Install the PDDL-relevant pinned dependency subset; keep unrelated benchmark dependencies optional.
-- [ ] Add regression tests for observed environment/loading defects, verify failure, implement minimal compatibility fix, rerun.
-- [ ] Verify original task loading and real state transition; commit installation/compatibility changes.
+- [x] Inspect imports, data and environment action/reset semantics; run original smoke check and record failures before patching.
+- [x] Install the PDDL-relevant pinned dependency subset; keep unrelated benchmark dependencies optional.
+- [x] Add regression tests for observed environment/loading defects, verify failure, implement minimal compatibility fix, rerun.
+- [x] Verify original task loading and real state transition; commit installation/compatibility changes.
 
 ### Task 2: Bounded API and experiment runner
 **Files:** `repro/`, `tests/test_runtime.py`, `mas/llm.py`, `.env.example`, `configs/reproduction.json`.
 **Interfaces:** Produces `python -m repro.run` with explicit task count, arm, output directory and shared ledger; preserves `GPTChat.__call__` signature.
-- [ ] Write tests for secret-free imports, budget exhaustion, API failure, usage logging, task selection and existing-output rejection; observe failures.
-- [ ] Implement guarded calls, request/response traces and a deterministic task manifest using existing MAS/environment classes.
-- [ ] Run all reproduction tests and a paid 16-token connectivity probe; persist sanitized provider metadata.
-- [ ] Commit the runnable infrastructure.
+- [x] Write tests for secret-free imports, budget exhaustion, API failure, usage logging, task selection and existing-output rejection; observe failures.
+- [x] Implement guarded calls, request/response traces and a deterministic task manifest using existing MAS/environment classes.
+- [x] Run all reproduction tests and a paid 16-token connectivity probe; persist sanitized provider metadata.
+- [x] Commit the runnable infrastructure.
 
 ### Task 3: Real paired experiments and memory trace
 **Files:** `configs/reproduction.json`, local `runs/`, public `artifacts/first-run/`, `repro/analyze.py`.
 **Interfaces:** Consumes bounded runner; produces per-task results, call ledger, selected trace and memory snapshots.
-- [ ] Freeze task selection before outcomes; verify identical manifests across arms and fresh independent memory directories.
+- [x] Freeze task selection before outcomes; verify identical manifests across arms and fresh independent memory directories.
 - [ ] Run GMemory and no-memory arms within shared total budget; checkpoint completed episodes.
 - [ ] Verify actual extraction, insight formation, retrieval, projector and persistence/reload; report any missing path honestly.
 - [ ] Analyze results, token/time/cost and failure modes; export sanitized reproducible evidence and commit.

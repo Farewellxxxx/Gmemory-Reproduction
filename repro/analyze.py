@@ -93,6 +93,16 @@ def validate_pair(first,second):
         raise ValueError('Paired runtime source differs')
 
 
+def validate_episode_inputs(first,second):
+    """Match executed PDDL inputs, including files beyond the task-list JSON."""
+    first_by_id={row['task_id']:row for row in first}
+    second_by_id={row['task_id']:row for row in second}
+    for identifier in first_by_id.keys() & second_by_id.keys():
+        for field in ['task','task_main','domain_files']:
+            if first_by_id[identifier][field]!=second_by_id[identifier][field]:
+                raise ValueError(f'Paired episode {identifier} {field} differ')
+
+
 def export_run(source,destination):
     source,destination=Path(source),Path(destination)
     destination.mkdir(parents=True,exist_ok=False)
@@ -128,6 +138,7 @@ def main():
     first,second=Path(args.gmemory),Path(args.baseline)
     validate_pair(json.loads((first/'manifest.json').read_text(encoding='utf-8')),
                   json.loads((second/'manifest.json').read_text(encoding='utf-8')))
+    validate_episode_inputs(read_rows(first/'results.jsonl'),read_rows(second/'results.jsonl'))
     report=dict(gmemory=summarize_run(first),no_memory=summarize_run(second),
                 paired_conditions_verified=True,
                 interpretation='Single ordered online diagnostic subset; not full-paper replication or statistical evidence of improvement.')

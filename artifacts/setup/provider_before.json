@@ -1,0 +1,12 @@
+{
+  "models": {
+    "available_gpt4omini": [
+      "gpt-4o-mini"
+    ],
+    "model_count": 1
+  },
+  "usage_before": {
+    "error_type": "HTTPError",
+    "status": 404
+  }
+}
