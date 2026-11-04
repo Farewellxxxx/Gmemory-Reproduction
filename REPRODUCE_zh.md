@@ -40,10 +40,12 @@ notepad .env
 ```powershell
 $env:PYTHONHASHSEED='42'
 $env:PYTHONUTF8='1'
-.\.venv\Scripts\python.exe -m pytest
+.\.venv\Scripts\python.exe -m pytest --basetemp=.pytest_tmp_repro
 ```
 
 测试包括真实 PDDL reset/step、凭据不打印、预算持久化、请求异常和任务数量限制。网络服务在单元测试中被替代，测试结果不能作为模型能力的证据。
+
+这里将 pytest 临时目录指定在仓库内部，避免本机系统 Temp 中旧目录的访问权限问题；`.pytest_tmp_repro` 只用于测试临时文件，pytest 重跑时可能清理它，不要把自己的资料放进去。
 
 ## 5. 小额连通性检查
 
@@ -124,7 +126,7 @@ for projection in trace['projections']:
 
 # state_chain 是 JSON 字符串，还要解码一次。
 states = json.loads(trace['episode']['context']['state_chain'])
-print('第一步实际收到的提示词：')
+print('第一步实际收到的 user 消息：')
 print(states[0]['nodes'][0]['user_instruction'])
 for index, state in enumerate(states, 1):
     step = state['graph']
@@ -139,9 +141,13 @@ import gzip
 
 with gzip.open('artifacts/interrupted-attempt/gmemory/calls.jsonl.gz', 'rt', encoding='utf-8') as stream:
     calls = [json.loads(line) for line in stream]
+first_action = next(call for call in calls
+                    if call['task_id'] == trace['task_id'] and call['purpose'] == 'agent_action')
+for message in first_action['messages']:
+    print('完整 API 消息：', message['role'], message['content'])
 for call in calls:
     if call['task_id'] == trace['task_id']:
-        print(call['purpose'], call['answer'], call['usage'])
+        print(call['purpose'], call.get('answer', call.get('error_type')), call.get('usage'))
 ```
 
 这些操作只读取已保存记录，不会重新调用模型，也不会增加费用。`step reward=-1` 需要结合动作类型理解：思考也可能得到 -1，所以不能把所有负奖励都统计成无效物理动作。

@@ -66,6 +66,8 @@ flowchart TD
 
 还有一个容易忽略的边界：检索时的 `query_task` 是当前目标文本。当前初始状态会进入最终 agent 提示词，但没有作为完整状态直接传入这次任务检索。检索到旧轨迹后，模型仍需判断其中哪些步骤适用于新的初始条件。
 
+核对完整 API 输入时，以 `calls.jsonl` 的 `messages` 为准。`Agent.response()` 实际发送的 system 文本包含角色基础说明和当前领域的动作说明；上游 AutoGen 写入状态链的 `system_instruction` 字段只取基础角色说明，状态链的 `user_instruction` 则保存实际 user 文本。因此，只读状态链的 system 字段会漏掉当前领域说明。
+
 ## W、P、R 在哪里？
 
 - **写入 / W**：`MASMemoryBase.save_task_context()` → `GMemory.add_memory()`。当前题结束后，才把本题加入长期记忆。

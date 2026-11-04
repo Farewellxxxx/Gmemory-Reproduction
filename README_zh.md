@@ -8,6 +8,7 @@
 
 1. [REPORT_zh.md](REPORT_zh.md)：先看本次到底跑成了什么、哪些没有完成、花费多少。
 2. [WALKTHROUGH_zh.md](WALKTHROUGH_zh.md)：沿一条真实轨迹，看旧经验如何进入下一题提示词。
+   初次读代码也可以先看 [一道成功任务的逐步注释](TRACE_PRIMARY_SUCCESS_zh.md)，逐行对照模型动作与环境反馈。
 3. [PAPER_TO_CODE_zh.md](PAPER_TO_CODE_zh.md)：把论文中的三层记忆、W/P/R 与实际函数对应起来。
 4. [REPRODUCE_zh.md](REPRODUCE_zh.md)：从安装、配置 Key 到运行两组实验，自己重跑。
 5. [KNOWN_UPSTREAM_BEHAVIOR_zh.md](KNOWN_UPSTREAM_BEHAVIOR_zh.md)：了解原始实现中已经核实、但本次保留的行为与局限。
