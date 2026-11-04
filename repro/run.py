@@ -153,7 +153,7 @@ def run_arm(cfg,arm,output,model):
         for agent in mas.agents_team.values():
             agent.add_task_instruction(instruction)
         before=memory.summary() if arm=='g-memory' else dict(memory_size=0,insights=[])
-        begin_calls=model.budget.state['settled_calls']
+        begin_calls=model.attempts_count
         begin_cost=model.budget.state['spent_ca']
         began=time.monotonic()
         reward,done=mas.schedule(task_cfg)
@@ -161,7 +161,7 @@ def run_arm(cfg,arm,output,model):
         row=dict(task_id=index,task=task,task_main=task_main,domain_files=domain_files,
                  success=bool(done),reward=float(reward),environment_steps=env.steps,
                  action_count=len(env.history)//3,elapsed_seconds=time.monotonic()-began,
-                 api_calls=model.budget.state['settled_calls']-begin_calls,
+                 api_calls=model.attempts_count-begin_calls,
                  estimated_ca=model.budget.state['spent_ca']-begin_cost,
                  memory_before=before,memory_after=after)
         write_json(output/'episodes'/f'{index:03d}.json',dict(result=row,

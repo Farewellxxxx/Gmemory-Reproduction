@@ -75,12 +75,14 @@ def test_bad_api_response_halts_and_keeps_auditable_record(tmp_path, kind):
             choices=[SimpleNamespace(message=SimpleNamespace(content=''),finish_reason='stop')])
     client = SimpleNamespace(chat=SimpleNamespace(completions=SimpleNamespace(create=create)))
     budget = Budget(tmp_path/'budget.json', 1, future())
-    llm = TrackedLLM(budget,tmp_path/'calls.jsonl',client=client)
+    llm = TrackedLLM(budget,tmp_path/'calls.jsonl',client=client,retry_backoff=0)
     with pytest.raises(RunHalted):
         llm([SimpleNamespace(role='user',content='test')])
     log = (tmp_path/'calls.jsonl').read_text()
     assert 'sk-secret-that-must-never-be-published' not in log
-    assert json.loads(log)['status'] == 'error'
+    rows=[json.loads(line) for line in log.splitlines()]
+    assert all(row['status']=='error' for row in rows)
+    assert len(rows)==(3 if kind=='network' else 1)
     if kind != 'empty':
         assert budget.state['pending']
 
@@ -105,3 +107,44 @@ def test_existing_run_directory_is_never_overwritten(tmp_path):
     with pytest.raises(FileExistsError):
         create_run_dir(target)
     assert (target/'evidence.txt').read_text() == 'keep me'
+
+
+def test_transient_provider_failure_retries_with_separate_reservation_and_log(tmp_path):
+    from repro.runtime import Budget,TrackedLLM
+    attempts=[]
+    class ProviderError(Exception):
+        status_code=525
+    def create(**kwargs):
+        attempts.append(kwargs)
+        if len(attempts)==1:
+            raise ProviderError('temporary proxy failure')
+        return SimpleNamespace(id='recovered',model='gpt-4o-mini',
+            usage=SimpleNamespace(prompt_tokens=20,completion_tokens=2),
+            choices=[SimpleNamespace(message=SimpleNamespace(content='OK'),finish_reason='stop')])
+    client=SimpleNamespace(chat=SimpleNamespace(completions=SimpleNamespace(create=create)))
+    budget=Budget(tmp_path/'budget.json',1,future())
+    llm=TrackedLLM(budget,tmp_path/'calls.jsonl',client=client,max_attempts=3,retry_backoff=0)
+    assert llm([SimpleNamespace(role='user',content='test')])=='OK'
+    rows=[json.loads(line) for line in (tmp_path/'calls.jsonl').read_text().splitlines()]
+    assert [row['status'] for row in rows]==['error','ok']
+    assert [row['attempt'] for row in rows]==[1,2]
+    assert rows[0]['logical_call_id']==rows[1]['logical_call_id']
+    assert len(budget.state['pending'])==1
+    assert budget.state['settled_calls']==1
+    assert llm.attempts_count==2
+
+
+@pytest.mark.parametrize('status,expected_attempts',[(525,3),(401,1)])
+def test_retry_exhaustion_and_nonretryable_error_remain_bounded(tmp_path,status,expected_attempts):
+    from repro.runtime import Budget,TrackedLLM,RunHalted
+    class ProviderError(Exception):
+        status_code=status
+    def create(**kwargs):
+        raise ProviderError('no response')
+    client=SimpleNamespace(chat=SimpleNamespace(completions=SimpleNamespace(create=create)))
+    budget=Budget(tmp_path/'budget.json',1,future())
+    llm=TrackedLLM(budget,tmp_path/'calls.jsonl',client=client,max_attempts=3,retry_backoff=0)
+    with pytest.raises(RunHalted):
+        llm([SimpleNamespace(role='user',content='test')])
+    assert llm.attempts_count==expected_attempts
+    assert len(budget.state['pending'])==expected_attempts

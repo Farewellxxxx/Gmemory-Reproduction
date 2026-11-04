@@ -16,6 +16,10 @@ class RunHalted(BaseException):
     """Stop the experiment, bypassing upstream broad retry/parse catches."""
 
 
+class RetryableAPIError(RunHalted):
+    """An already logged transport error; only the bounded adapter may retry."""
+
+
 def utc_now():
     return datetime.now(timezone.utc).isoformat()
 
@@ -119,8 +123,14 @@ class Budget:
 
 
 class TrackedLLM:
-    def __init__(self,budget,log_path,model='gpt-4o-mini',client=None):
+    def __init__(self,budget,log_path,model='gpt-4o-mini',client=None,max_attempts=3,retry_backoff=2):
+        if not isinstance(max_attempts,int) or not 1<=max_attempts<=3:
+            raise ValueError('At most three transport attempts are permitted')
+        if not math.isfinite(retry_backoff) or not 0<=retry_backoff<=5:
+            raise ValueError('Retry backoff must be between zero and five seconds')
         self.budget,self.log_path,self.model_name = budget,Path(log_path),model
+        self.max_attempts,self.retry_backoff=max_attempts,retry_backoff
+        self.attempts_count=0
         self.task_id = None
         self.arm = None
         if client is None:
@@ -136,13 +146,25 @@ class TrackedLLM:
         if not isinstance(max_tokens,int) or not 1 <= max_tokens <= 512 or num_comps != 1:
             raise RunHalted('Reproduction permits one completion of at most 512 tokens')
         payload = [dict(role=m.role,content=m.content) for m in messages]
-        # Byte fallback gives a conservative tokenizer bound; allow framing overhead.
-        input_upper = len(json.dumps(payload,ensure_ascii=False).encode('utf-8')) + 1024
-        call_id = self.budget.reserve(input_upper,max_tokens)
         funcs = [frame.function for frame in inspect.stack()[:12]]
         purpose = next((f for f in funcs if f in ['_extract_mas_message','_detect_mistakes',
                        'project_insights','_finetune_insights','_merge_rules','retrieve_memory']), 'agent_action')
+        logical_call_id=uuid.uuid4().hex
+        for attempt in range(1,self.max_attempts+1):
+            try:
+                return self._attempt(payload,temperature,max_tokens,stop_strs,purpose,logical_call_id,attempt)
+            except RetryableAPIError:
+                if attempt==self.max_attempts:
+                    raise RunHalted('Transient API retries exhausted; unresolved reservations retained') from None
+                time.sleep(self.retry_backoff*attempt)
+
+    def _attempt(self,payload,temperature,max_tokens,stop_strs,purpose,logical_call_id,attempt):
+        # Byte fallback gives a conservative tokenizer bound; allow framing overhead.
+        input_upper = len(json.dumps(payload,ensure_ascii=False).encode('utf-8')) + 1024
+        call_id = self.budget.reserve(input_upper,max_tokens)
+        self.attempts_count+=1
         row = dict(call_id=call_id,time_utc=utc_now(),arm=self.arm,task_id=self.task_id,
+                   logical_call_id=logical_call_id,attempt=attempt,max_attempts=self.max_attempts,
                    purpose=purpose,model_requested=self.model_name,messages=payload,
                    max_tokens=max_tokens,temperature=temperature,stop=stop_strs)
         started = time.monotonic()
@@ -168,9 +190,14 @@ class TrackedLLM:
             row.update(status='error',error=redact(exc))
             raise
         except Exception as exc:
+            from openai import APIConnectionError
+            status=getattr(exc,'status_code',None)
             row.update(status='error',error_type=type(exc).__name__,
-                       http_status=getattr(exc,'status_code',None))
-            raise RunHalted(f'API interrupted ({type(exc).__name__}); reservation retained') from None
+                       http_status=status)
+            transient=isinstance(exc,(APIConnectionError,TimeoutError,ConnectionError)) or status==429 or (isinstance(status,int) and status>=500)
+            if transient and 'usage' not in row:
+                raise RetryableAPIError(f'Transient API failure ({type(exc).__name__})') from None
+            raise RunHalted(f'API interrupted ({type(exc).__name__}); see usage ledger') from None
         finally:
             row['elapsed_seconds'] = round(time.monotonic()-started,3)
             append_json(self.log_path,row)

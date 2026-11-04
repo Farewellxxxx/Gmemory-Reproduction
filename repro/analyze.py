@@ -54,6 +54,9 @@ def summarize_run(folder):
             roles.update(node['agent_name'] for node in state.get('nodes',[]) if 'agent_name' in node)
     successes=sum(bool(row['success']) for row in results)
     status=json.loads((folder/'status.json').read_text(encoding='utf-8'))
+    budget_path=folder/'budget_at_end.json'
+    pending=json.loads(budget_path.read_text(encoding='utf-8')).get('pending',{}) if budget_path.exists() else {}
+    call_ids={row.get('call_id') for row in calls}
     return dict(status=status['status'],completed_tasks=len(results),successes=successes,
                 success_rate=successes/len(results) if results else None,
                 mean_progress_reward=sum(row['reward'] for row in results)/len(results) if results else None,
@@ -62,6 +65,8 @@ def summarize_run(folder):
                     'physical_action_attempts','invalid_physical_actions']},
                 role_action_counts=dict(roles),
                 api_calls=len(calls),api_errors=sum(row['status']!='ok' for row in calls),
+                unresolved_calls=sum(row['status']=='error' and 'usage' not in row for row in calls),
+                unresolved_reserved_ca=sum(amount for identifier,amount in pending.items() if identifier in call_ids),
                 finish_reasons=dict(Counter(row.get('finish_reason','unreported') for row in calls)),
                 prompt_tokens=sum(x['prompt_tokens'] for x in purposes.values()),
                 completion_tokens=sum(x['completion_tokens'] for x in purposes.values()),
@@ -91,7 +96,7 @@ def validate_pair(first,second):
 def export_run(source,destination):
     source,destination=Path(source),Path(destination)
     destination.mkdir(parents=True,exist_ok=False)
-    for name in ['manifest.json','status.json','results.jsonl','final_memory.json','budget_at_end.json','reload_check.json','evidence_audit.json']:
+    for name in ['manifest.json','status.json','results.jsonl','final_memory.json','task_graph.json','budget_at_end.json','reload_check.json','evidence_audit.json']:
         if (source/name).exists():
             (destination/name).write_text(redact((source/name).read_text(encoding='utf-8')),encoding='utf-8')
     for name in ['calls.jsonl','workflow.jsonl','memory_events.jsonl','memory_documents.json']:

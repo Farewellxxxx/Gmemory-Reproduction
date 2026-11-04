@@ -42,6 +42,10 @@ def main():
     assert result['graph_nodes']==expected['graph_nodes']
     assert result['graph_edges']==expected['graph_edges']
     assert result['records_equal'] and result['insights_equal']
+    graph=memory.task_layer.graph
+    write_json(run/'task_graph.json',dict(directed=graph.is_directed(),
+               nodes=[dict(id=node,**attrs) for node,attrs in graph.nodes(data=True)],
+               links=[dict(source=source,target=target,**attrs) for source,target,attrs in graph.edges(data=True)]))
     if docs['documents']:
         successful,failed,insights=memory._retrieve_memory_raw(docs['documents'][0],successful_topk=1,failed_topk=1)
         result['retrieval_after_reload']=dict(successful=len(successful),failed=len(failed),insights=len(insights))
