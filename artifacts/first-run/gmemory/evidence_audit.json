@@ -1,0 +1,7 @@
+{
+  "memory_retrievals_checked": 24,
+  "successful_histories_checked": 5,
+  "retrieved_rules_checked": 3,
+  "checked_content_matches_prior_evidence": true,
+  "scope": "Completed episodes only; successful trajectory text and retrieved rule snapshots, not every internal graph edge."
+}

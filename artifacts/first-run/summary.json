@@ -1,0 +1,182 @@
+{
+  "gmemory": {
+    "status": "complete",
+    "completed_tasks": 24,
+    "successes": 2,
+    "success_rate": 0.08333333333333333,
+    "mean_progress_reward": 0.2511574074074074,
+    "environment_steps": 555,
+    "agent_steps": 699,
+    "thought_steps": 144,
+    "query_steps": 160,
+    "physical_action_attempts": 395,
+    "invalid_physical_actions": 152,
+    "role_action_counts": {
+      "solver": 676,
+      "ground_truth": 23
+    },
+    "api_calls": 837,
+    "api_errors": 0,
+    "unresolved_calls": 0,
+    "unresolved_reserved_ca": 0,
+    "finish_reasons": {
+      "stop": 836,
+      "length": 1
+    },
+    "prompt_tokens": 1992551,
+    "completion_tokens": 30240,
+    "estimated_ca": 2.219186550000001,
+    "api_seconds": 3059.0829999999983,
+    "by_purpose": {
+      "project_insights": {
+        "calls": 48,
+        "prompt_tokens": 7122,
+        "completion_tokens": 11120,
+        "estimated_ca": 0.0541821,
+        "seconds": 317.2410000000001
+      },
+      "agent_action": {
+        "calls": 722,
+        "prompt_tokens": 1865870,
+        "completion_tokens": 9478,
+        "estimated_ca": 1.998971100000001,
+        "seconds": 2434.130999999998
+      },
+      "_extract_mas_message": {
+        "calls": 24,
+        "prompt_tokens": 53493,
+        "completion_tokens": 4767,
+        "estimated_ca": 0.07618905000000001,
+        "seconds": 106.85900000000001
+      },
+      "_detect_mistakes": {
+        "calls": 22,
+        "prompt_tokens": 39827,
+        "completion_tokens": 3708,
+        "estimated_ca": 0.05739194999999999,
+        "seconds": 130.46499999999997
+      },
+      "retrieve_memory": {
+        "calls": 6,
+        "prompt_tokens": 4967,
+        "completion_tokens": 6,
+        "estimated_ca": 0.00524055,
+        "seconds": 14.578000000000001
+      },
+      "_finetune_insights": {
+        "calls": 10,
+        "prompt_tokens": 19608,
+        "completion_tokens": 962,
+        "estimated_ca": 0.024628800000000003,
+        "seconds": 47.294999999999995
+      },
+      "_merge_rules": {
+        "calls": 5,
+        "prompt_tokens": 1664,
+        "completion_tokens": 199,
+        "estimated_ca": 0.0025830000000000002,
+        "seconds": 8.514000000000001
+      }
+    },
+    "by_domain": {
+      "blockworld": {
+        "tasks": 6,
+        "successes": 0,
+        "mean_reward": 0.1111111111111111
+      },
+      "gripper": {
+        "tasks": 6,
+        "successes": 0,
+        "mean_reward": 0.19444444444444442
+      },
+      "barman": {
+        "tasks": 6,
+        "successes": 0,
+        "mean_reward": 0.08333333333333333
+      },
+      "tyreworld": {
+        "tasks": 6,
+        "successes": 2,
+        "mean_reward": 0.6157407407407407
+      }
+    },
+    "memory_events": {
+      "retrieval": 24,
+      "projection": 48,
+      "add_memory_begin": 24,
+      "add_memory_end": 24,
+      "finetune_insights_begin": 4,
+      "finetune_insights_end": 4,
+      "merge_insights_begin": 1,
+      "merge_insights_end": 1
+    },
+    "retrievals_with_successful_history": 5,
+    "retrievals_with_insights": 1,
+    "projections_with_empty_input": 46
+  },
+  "no_memory": {
+    "status": "complete",
+    "completed_tasks": 24,
+    "successes": 2,
+    "success_rate": 0.08333333333333333,
+    "mean_progress_reward": 0.2972222222222222,
+    "environment_steps": 540,
+    "agent_steps": 693,
+    "thought_steps": 153,
+    "query_steps": 154,
+    "physical_action_attempts": 386,
+    "invalid_physical_actions": 138,
+    "role_action_counts": {
+      "solver": 663,
+      "ground_truth": 30
+    },
+    "api_calls": 723,
+    "api_errors": 0,
+    "unresolved_calls": 0,
+    "unresolved_reserved_ca": 0,
+    "finish_reasons": {
+      "stop": 723
+    },
+    "prompt_tokens": 1661344,
+    "completion_tokens": 9637,
+    "estimated_ca": 1.784886599999998,
+    "api_seconds": 2515.8320000000026,
+    "by_purpose": {
+      "agent_action": {
+        "calls": 723,
+        "prompt_tokens": 1661344,
+        "completion_tokens": 9637,
+        "estimated_ca": 1.784886599999998,
+        "seconds": 2515.8320000000026
+      }
+    },
+    "by_domain": {
+      "blockworld": {
+        "tasks": 6,
+        "successes": 1,
+        "mean_reward": 0.3611111111111111
+      },
+      "gripper": {
+        "tasks": 6,
+        "successes": 0,
+        "mean_reward": 0.3833333333333333
+      },
+      "barman": {
+        "tasks": 6,
+        "successes": 0,
+        "mean_reward": 0.0
+      },
+      "tyreworld": {
+        "tasks": 6,
+        "successes": 1,
+        "mean_reward": 0.4444444444444444
+      }
+    },
+    "memory_events": {},
+    "retrievals_with_successful_history": 0,
+    "retrievals_with_insights": 0,
+    "projections_with_empty_input": 0
+  },
+  "paired_conditions_verified": true,
+  "interpretation": "Single ordered online diagnostic subset; not full-paper replication or statistical evidence of improvement."
+}

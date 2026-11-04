@@ -1,0 +1,10 @@
+{
+  "task_id": 20,
+  "projected_rules_in_actual_prompt": [
+    true,
+    true,
+    true
+  ],
+  "successful_trajectory_in_actual_prompt": true,
+  "first_state_user_matches_actual_message": true
+}

@@ -1,0 +1,325 @@
+{
+  "directed": false,
+  "nodes": [
+    {
+      "id": "The goal is to satisfy the following conditions: b2 is on b1., b3 is on b2.",
+      "cluster_id": 0
+    },
+    {
+      "id": "The goal is to satisfy the following conditions: b1 is on b7., b2 is on b5., b3 is on b2., b4 is on b1., b5 is on b6., b7 is on b3.",
+      "cluster_id": 1
+    },
+    {
+      "id": "The goal is to satisfy the following conditions: b2 is on b3., b3 is on b1.",
+      "cluster_id": 0
+    },
+    {
+      "id": "The goal is to satisfy the following conditions: b2 is on b1., b3 is on b4.",
+      "cluster_id": 1
+    },
+    {
+      "id": "The goal is to satisfy the following conditions: b1 is on b2., b2 is on b3., b3 is on b4.",
+      "cluster_id": 1
+    },
+    {
+      "id": "The goal is to satisfy the following conditions: b1 is on b3., b3 is on b5.",
+      "cluster_id": 1
+    },
+    {
+      "id": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. ",
+      "cluster_id": 2
+    },
+    {
+      "id": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. ",
+      "cluster_id": 3
+    },
+    {
+      "id": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. ",
+      "cluster_id": 3
+    },
+    {
+      "id": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball10 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. , ball9 is at roomb. ",
+      "cluster_id": 4
+    },
+    {
+      "id": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball10 is at roomb. , ball11 is at roomb. , ball12 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. , ball9 is at roomb. ",
+      "cluster_id": 4
+    },
+    {
+      "id": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at rooma. , ball4 is at rooma. ",
+      "cluster_id": 2
+    },
+    {
+      "id": "The goal is to satisfy the following conditions: shot1 contains cocktail1. , shot2 contains ingredient2. ",
+      "cluster_id": 5
+    },
+    {
+      "id": "The goal is to satisfy the following conditions: shot2 contains cocktail3. ",
+      "cluster_id": 6
+    },
+    {
+      "id": "The goal is to satisfy the following conditions: shot3 contains cocktail3. ",
+      "cluster_id": 6
+    },
+    {
+      "id": "The goal is to satisfy the following conditions: shot1 contains cocktail1. ",
+      "cluster_id": 5
+    },
+    {
+      "id": "The goal is to satisfy the following conditions: shot1 contains cocktail2. , shot2 contains cocktail3. ",
+      "cluster_id": 5
+    },
+    {
+      "id": "The goal is to satisfy the following conditions: Wheel r1 is inflated., r1 is on the-hub1., w1 is in boot.",
+      "cluster_id": 7
+    },
+    {
+      "id": "The goal is to satisfy the following conditions: Wheel r1 is inflated., Wheel r2 is inflated., r1 is on the-hub1., r2 is on the-hub2., w1 is in boot., w2 is in boot.",
+      "cluster_id": 7
+    },
+    {
+      "id": "The goal is to satisfy the following conditions: Wheel r1 is inflated., Wheel r2 is inflated., Wheel r3 is inflated., r1 is on the-hub1., r2 is on the-hub2., r3 is on the-hub3., w1 is in boot., w2 is in boot., w3 is in boot."
+    },
+    {
+      "id": "The goal is to satisfy the following conditions: Wheel r1 is inflated., Wheel r2 is inflated., Wheel r3 is inflated., Wheel r4 is inflated., r1 is on the-hub1., r2 is on the-hub2., r3 is on the-hub3., r4 is on the-hub4., w1 is in boot., w2 is in boot., w3 is in boot., w4 is in boot."
+    },
+    {
+      "id": "The goal is to satisfy the following conditions: r1 is on the-hub1., w1 is in boot."
+    },
+    {
+      "id": "The goal is to satisfy the following conditions: Wheel r1 is inflated., Wheel r2 is inflated., Wheel r3 is inflated."
+    }
+  ],
+  "links": [
+    {
+      "source": "The goal is to satisfy the following conditions: b2 is on b1., b3 is on b2.",
+      "target": "The goal is to satisfy the following conditions: b1 is on b7., b2 is on b5., b3 is on b2., b4 is on b1., b5 is on b6., b7 is on b3.",
+      "weight": 0.8298638164997101
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: b2 is on b1., b3 is on b2.",
+      "target": "The goal is to satisfy the following conditions: b2 is on b3., b3 is on b1.",
+      "weight": 0.992481448687613
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: b2 is on b1., b3 is on b2.",
+      "target": "The goal is to satisfy the following conditions: b2 is on b1., b3 is on b4.",
+      "weight": 0.9089419543743134
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: b2 is on b1., b3 is on b2.",
+      "target": "The goal is to satisfy the following conditions: b1 is on b2., b2 is on b3., b3 is on b4.",
+      "weight": 0.8991539031267166
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: b2 is on b1., b3 is on b2.",
+      "target": "The goal is to satisfy the following conditions: b1 is on b3., b3 is on b5.",
+      "weight": 0.845465898513794
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: b1 is on b7., b2 is on b5., b3 is on b2., b4 is on b1., b5 is on b6., b7 is on b3.",
+      "target": "The goal is to satisfy the following conditions: b2 is on b3., b3 is on b1.",
+      "weight": 0.8408031314611435
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: b1 is on b7., b2 is on b5., b3 is on b2., b4 is on b1., b5 is on b6., b7 is on b3.",
+      "target": "The goal is to satisfy the following conditions: b2 is on b1., b3 is on b4.",
+      "weight": 0.8518861830234528
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: b1 is on b7., b2 is on b5., b3 is on b2., b4 is on b1., b5 is on b6., b7 is on b3.",
+      "target": "The goal is to satisfy the following conditions: b1 is on b2., b2 is on b3., b3 is on b4.",
+      "weight": 0.9053420796990395
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: b1 is on b7., b2 is on b5., b3 is on b2., b4 is on b1., b5 is on b6., b7 is on b3.",
+      "target": "The goal is to satisfy the following conditions: b1 is on b3., b3 is on b5.",
+      "weight": 0.8768224269151688
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: b2 is on b3., b3 is on b1.",
+      "target": "The goal is to satisfy the following conditions: b2 is on b1., b3 is on b4.",
+      "weight": 0.913860097527504
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: b2 is on b3., b3 is on b1.",
+      "target": "The goal is to satisfy the following conditions: b1 is on b2., b2 is on b3., b3 is on b4.",
+      "weight": 0.9067767709493637
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: b2 is on b3., b3 is on b1.",
+      "target": "The goal is to satisfy the following conditions: b1 is on b3., b3 is on b5.",
+      "weight": 0.8663973957300186
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: b2 is on b1., b3 is on b4.",
+      "target": "The goal is to satisfy the following conditions: b1 is on b2., b2 is on b3., b3 is on b4.",
+      "weight": 0.9802842922508717
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: b2 is on b1., b3 is on b4.",
+      "target": "The goal is to satisfy the following conditions: b1 is on b3., b3 is on b5.",
+      "weight": 0.8423257768154144
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: b1 is on b2., b2 is on b3., b3 is on b4.",
+      "target": "The goal is to satisfy the following conditions: b1 is on b3., b3 is on b5.",
+      "weight": 0.8455590158700943
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. ",
+      "target": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. ",
+      "weight": 0.9603365547955036
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. ",
+      "target": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. ",
+      "weight": 0.9482884928584099
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. ",
+      "target": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball10 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. , ball9 is at roomb. ",
+      "weight": 0.9255926012992859
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. ",
+      "target": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball10 is at roomb. , ball11 is at roomb. , ball12 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. , ball9 is at roomb. ",
+      "weight": 0.9039643853902817
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. ",
+      "target": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at rooma. , ball4 is at rooma. ",
+      "weight": 0.9853469524532557
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. ",
+      "target": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. ",
+      "weight": 0.9868879858404398
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. ",
+      "target": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball10 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. , ball9 is at roomb. ",
+      "weight": 0.9674441292881966
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. ",
+      "target": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball10 is at roomb. , ball11 is at roomb. , ball12 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. , ball9 is at roomb. ",
+      "weight": 0.9522645957767963
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. ",
+      "target": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at rooma. , ball4 is at rooma. ",
+      "weight": 0.9485772848129272
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. ",
+      "target": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball10 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. , ball9 is at roomb. ",
+      "weight": 0.9843506310135126
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. ",
+      "target": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball10 is at roomb. , ball11 is at roomb. , ball12 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. , ball9 is at roomb. ",
+      "weight": 0.9721216894686222
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. ",
+      "target": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at rooma. , ball4 is at rooma. ",
+      "weight": 0.9387496560811996
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball10 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. , ball9 is at roomb. ",
+      "target": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball10 is at roomb. , ball11 is at roomb. , ball12 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. , ball9 is at roomb. ",
+      "weight": 0.9948460813611746
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball10 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. , ball9 is at roomb. ",
+      "target": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at rooma. , ball4 is at rooma. ",
+      "weight": 0.9101682230830193
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball10 is at roomb. , ball11 is at roomb. , ball12 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. , ball9 is at roomb. ",
+      "target": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at rooma. , ball4 is at rooma. ",
+      "weight": 0.8882589042186737
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: shot1 contains cocktail1. , shot2 contains ingredient2. ",
+      "target": "The goal is to satisfy the following conditions: shot2 contains cocktail3. ",
+      "weight": 0.8228539824485779
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: shot1 contains cocktail1. , shot2 contains ingredient2. ",
+      "target": "The goal is to satisfy the following conditions: shot3 contains cocktail3. ",
+      "weight": 0.8135130703449249
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: shot1 contains cocktail1. , shot2 contains ingredient2. ",
+      "target": "The goal is to satisfy the following conditions: shot1 contains cocktail1. ",
+      "weight": 0.9147343933582306
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: shot1 contains cocktail1. , shot2 contains ingredient2. ",
+      "target": "The goal is to satisfy the following conditions: shot1 contains cocktail2. , shot2 contains cocktail3. ",
+      "weight": 0.9211412519216537
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: shot2 contains cocktail3. ",
+      "target": "The goal is to satisfy the following conditions: shot3 contains cocktail3. ",
+      "weight": 0.9629725217819214
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: shot2 contains cocktail3. ",
+      "target": "The goal is to satisfy the following conditions: shot1 contains cocktail1. ",
+      "weight": 0.886308565735817
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: shot2 contains cocktail3. ",
+      "target": "The goal is to satisfy the following conditions: shot1 contains cocktail2. , shot2 contains cocktail3. ",
+      "weight": 0.8212657868862152
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: shot3 contains cocktail3. ",
+      "target": "The goal is to satisfy the following conditions: shot1 contains cocktail1. ",
+      "weight": 0.8863356113433838
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: shot3 contains cocktail3. ",
+      "target": "The goal is to satisfy the following conditions: shot1 contains cocktail2. , shot2 contains cocktail3. ",
+      "weight": 0.8595505356788635
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: shot1 contains cocktail1. ",
+      "target": "The goal is to satisfy the following conditions: shot1 contains cocktail2. , shot2 contains cocktail3. ",
+      "weight": 0.9143942147493362
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: Wheel r1 is inflated., r1 is on the-hub1., w1 is in boot.",
+      "target": "The goal is to satisfy the following conditions: Wheel r1 is inflated., Wheel r2 is inflated., r1 is on the-hub1., r2 is on the-hub2., w1 is in boot., w2 is in boot.",
+      "weight": 0.937893446534872
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: Wheel r1 is inflated., r1 is on the-hub1., w1 is in boot.",
+      "target": "The goal is to satisfy the following conditions: Wheel r1 is inflated., Wheel r2 is inflated., Wheel r3 is inflated., r1 is on the-hub1., r2 is on the-hub2., r3 is on the-hub3., w1 is in boot., w2 is in boot., w3 is in boot.",
+      "weight": 0.8822014182806015
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: Wheel r1 is inflated., r1 is on the-hub1., w1 is in boot.",
+      "target": "The goal is to satisfy the following conditions: Wheel r1 is inflated., Wheel r2 is inflated., Wheel r3 is inflated., Wheel r4 is inflated., r1 is on the-hub1., r2 is on the-hub2., r3 is on the-hub3., r4 is on the-hub4., w1 is in boot., w2 is in boot., w3 is in boot., w4 is in boot.",
+      "weight": 0.8296720683574677
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: Wheel r1 is inflated., Wheel r2 is inflated., r1 is on the-hub1., r2 is on the-hub2., w1 is in boot., w2 is in boot.",
+      "target": "The goal is to satisfy the following conditions: Wheel r1 is inflated., Wheel r2 is inflated., Wheel r3 is inflated., r1 is on the-hub1., r2 is on the-hub2., r3 is on the-hub3., w1 is in boot., w2 is in boot., w3 is in boot.",
+      "weight": 0.9660613462328911
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: Wheel r1 is inflated., Wheel r2 is inflated., r1 is on the-hub1., r2 is on the-hub2., w1 is in boot., w2 is in boot.",
+      "target": "The goal is to satisfy the following conditions: Wheel r1 is inflated., Wheel r2 is inflated., Wheel r3 is inflated., Wheel r4 is inflated., r1 is on the-hub1., r2 is on the-hub2., r3 is on the-hub3., r4 is on the-hub4., w1 is in boot., w2 is in boot., w3 is in boot., w4 is in boot.",
+      "weight": 0.9369894862174988
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: Wheel r1 is inflated., Wheel r2 is inflated., Wheel r3 is inflated., r1 is on the-hub1., r2 is on the-hub2., r3 is on the-hub3., w1 is in boot., w2 is in boot., w3 is in boot.",
+      "target": "The goal is to satisfy the following conditions: Wheel r1 is inflated., Wheel r2 is inflated., Wheel r3 is inflated., Wheel r4 is inflated., r1 is on the-hub1., r2 is on the-hub2., r3 is on the-hub3., r4 is on the-hub4., w1 is in boot., w2 is in boot., w3 is in boot., w4 is in boot.",
+      "weight": 0.9845928475260735
+    }
+  ]
+}

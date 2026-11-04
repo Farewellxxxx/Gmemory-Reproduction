@@ -1,0 +1,2 @@
+# Exported evidence is hashed byte-for-byte; preserve its original bytes on checkout.
+artifacts/** -text

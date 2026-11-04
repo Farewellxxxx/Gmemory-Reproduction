@@ -1,0 +1,9 @@
+{
+  "core_autocrlf": true,
+  "before_fix_exact_bytes": false,
+  "after_fix_exact_bytes": true,
+  "expected_sha256": "6bb1b9dd0e4bc676b1627469d12c2187c08145f30f557ebed8cfc3415f7d4f9c",
+  "before_sha256": "b5127ed85e79cf003657cf6d9b7c59c9b6814edbad15d22b31d5b0835331f843",
+  "after_sha256": "6bb1b9dd0e4bc676b1627469d12c2187c08145f30f557ebed8cfc3415f7d4f9c",
+  "scope": "Isolated Git index checkout with artifacts/** -text; no model or benchmark changes."
+}

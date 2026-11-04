@@ -1,0 +1,55 @@
+{
+  "memory_size": 24,
+  "graph_nodes": 23,
+  "graph_edges": 46,
+  "insights": [
+    {
+      "rule": "Ensure all required elements are correctly positioned and prioritize actions that directly contribute to achieving the goal state to streamline the process and avoid incomplete outcomes.",
+      "score": 2,
+      "positive_correlation_tasks": [
+        "The goal is to satisfy the following conditions: b2 is on b1., b3 is on b2.",
+        "The goal is to satisfy the following conditions: b2 is on b3., b3 is on b1."
+      ],
+      "negative_correlation_tasks": []
+    },
+    {
+      "rule": "Ensure all required items are accounted for and move them to the target location in manageable steps to avoid confusion and incomplete results.",
+      "score": 2,
+      "positive_correlation_tasks": [
+        "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. ",
+        "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. "
+      ],
+      "negative_correlation_tasks": []
+    },
+    {
+      "rule": "Gather all necessary components before executing a task to avoid invalid actions and incomplete results.",
+      "score": 2,
+      "positive_correlation_tasks": [
+        "The goal is to satisfy the following conditions: shot1 contains cocktail1. , shot2 contains ingredient2. ",
+        "The goal is to satisfy the following conditions: shot1 contains cocktail1. ",
+        "The goal is to satisfy the following conditions: shot1 contains cocktail2. , shot2 contains cocktail3. "
+      ],
+      "negative_correlation_tasks": []
+    },
+    {
+      "rule": "Focus on completing one step at a time to prevent overthinking and missed opportunities.",
+      "score": 2,
+      "positive_correlation_tasks": [
+        "The goal is to satisfy the following conditions: shot1 contains cocktail1. , shot2 contains ingredient2. ",
+        "The goal is to satisfy the following conditions: shot1 contains cocktail1. ",
+        "The goal is to satisfy the following conditions: shot1 contains cocktail2. , shot2 contains cocktail3. "
+      ],
+      "negative_correlation_tasks": []
+    },
+    {
+      "rule": "Prioritize actions that directly contribute to task goals to increase the likelihood of success.",
+      "score": 2,
+      "positive_correlation_tasks": [
+        "The goal is to satisfy the following conditions: shot1 contains cocktail1. , shot2 contains ingredient2. ",
+        "The goal is to satisfy the following conditions: shot1 contains cocktail1. ",
+        "The goal is to satisfy the following conditions: shot1 contains cocktail2. , shot2 contains cocktail3. "
+      ],
+      "negative_correlation_tasks": []
+    }
+  ]
+}
