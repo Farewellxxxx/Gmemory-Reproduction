@@ -51,6 +51,6 @@
 **Files:** `README_zh.md`, `REPRODUCE_zh.md`, `PAPER_TO_CODE_zh.md`, `WALKTHROUGH_zh.md`, `REPORT_zh.md`, `RUNBOOK.md`.
 **Interfaces:** Consumes real artifacts; produces a clean clone-to-run guide and a trace-backed teaching narrative.
 - [x] Explain each execution step, algorithm-to-code map, real cross-task example and limitations in Chinese.
-- [ ] Verify documented commands, test suite, artifact counts/costs, secret scanning and Git status.
-- [ ] Request a fresh whole-branch review; address material findings with regression checks.
+- [x] Verify documented commands, test suite, artifact counts/costs, secret scanning and Git status.
+- [x] Request a fresh whole-branch review; address material findings with regression checks.
 - [ ] Push approved output to `Farewellxxxx/Gmemory-Reproduction` and verify remote commit.

@@ -1,0 +1,23 @@
+{
+  "scope": "Offline execution of published teaching examples; no language model calls.",
+  "examples": [
+    {
+      "document": "TRACE_PRIMARY_SUCCESS_zh.md",
+      "python_block": 1,
+      "sha256": "eed6d05b0dad921d25d28f1e88c81682aacd77f61cec5825134173c260702916",
+      "execution": "passed"
+    },
+    {
+      "document": "REPRODUCE_zh.md",
+      "python_block": 1,
+      "sha256": "01c2063aa3a0159f7cc9fe7fa00153912c700c093e129196abfab6e6f3927f63",
+      "execution": "passed"
+    },
+    {
+      "document": "REPRODUCE_zh.md",
+      "python_block": 2,
+      "sha256": "4eeb740486601e5dff0a5457bbafe9f6dfc317e59512728f77e885d7a1c66281",
+      "execution": "passed"
+    }
+  ]
+}

@@ -154,7 +154,7 @@ Git 保留上游全部历史。运行期间新增的统计工具与中文说明�
 
 已完成 28 项离线测试，覆盖 API 预算和错误处理、任务范围、真实环境转换、记忆存储与统计；依赖检查通过。两组真实 GMemory 都经过新进程保存重载和历史来源核对，重新检索时 LLM 调用为 0。主实验与补充实验分别核对相同任务、配置、实际 PDDL 文件、核心源码、依赖和 embedding 文件。
 
-全部导出组共 52 个文件通过 SHA256 核对；所有 3,262 次公开请求与共享账本一致。公开的 Python 核验与教学示例可以离线运行，具体范围见[检查记录](artifacts/validation/README.md)和[结构化核验结果](artifacts/validation/evidence_validation.json)。发布前还检查 Git 重新检出的原始字节、凭据格式与完整提交历史；最终审查结论另随执行过程归档。
+全部导出组共 52 个文件通过 SHA256 核对；所有 3,262 次公开请求与共享账本一致。公开的 Python 核验与教学示例可以离线运行，具体范围见[检查记录](artifacts/validation/README.md)和[结构化核验结果](artifacts/validation/evidence_validation.json)。发布前还检查 Git 重新检出的原始字节、凭据格式与完整提交历史。[独立审查](docs/FINAL_REVIEW_zh.md)未发现需要修改的问题，并重新核对了 79 条完整任务记录和费用账本；范围外事项及处理依据一并列明。
 
 - [运行配置](configs/reproduction.json) 与各组 `manifest.json` 保存配置、任务、源码/数据哈希和依赖版本。
 - `calls.jsonl.gz` 保存完整请求、回答、usage、用途与耗时；`episodes.jsonl.gz` 保存每题状态链。
