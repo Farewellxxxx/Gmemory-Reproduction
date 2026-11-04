@@ -1,0 +1,43 @@
+............................                                             [100%]
+============================== warnings summary ===============================
+tests/test_memory_storage.py::test_finch_api_clusters_two_separated_pairs
+  E:\study documents\FYP\gmemory-reproduction\.venv\Lib\site-packages\transformers\utils\hub.py:105: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+    warnings.warn(
+
+tests/test_memory_storage.py::test_finch_api_clusters_two_separated_pairs
+  E:\study documents\FYP\gmemory-reproduction\.venv\Lib\site-packages\finch\finch.py:13: UserWarning: pynndescent not installed: No module named 'pynndescent'
+    warnings.warn('pynndescent not installed: {}'.format(e))
+
+tests/test_memory_storage.py::test_real_chroma_and_graph_reload_preserve_one_trajectory
+tests/test_memory_storage.py::test_real_chroma_and_graph_reload_preserve_one_trajectory
+  E:\study documents\FYP\gmemory-reproduction\.venv\Lib\site-packages\chromadb\api\models\CollectionCommon.py:158: DeprecationWarning: legacy embedding function config
+    return load_collection_configuration_from_json(self._model.configuration_json)
+
+tests/test_pddl_runtime.py::test_pddl_loads_without_optional_benchmark_packages
+  E:\study documents\FYP\gmemory-reproduction\.venv\Lib\site-packages\matplotlib\_fontconfig_pattern.py:64: PyparsingDeprecationWarning: 'oneOf' deprecated - use 'one_of'
+    prop = Group((name + Suppress("=") + comma_separated(value)) | oneOf(_CONSTANTS))
+
+tests/test_pddl_runtime.py::test_pddl_loads_without_optional_benchmark_packages
+tests/test_pddl_runtime.py::test_pddl_loads_without_optional_benchmark_packages
+tests/test_pddl_runtime.py::test_pddl_loads_without_optional_benchmark_packages
+tests/test_pddl_runtime.py::test_pddl_loads_without_optional_benchmark_packages
+tests/test_pddl_runtime.py::test_pddl_loads_without_optional_benchmark_packages
+tests/test_pddl_runtime.py::test_pddl_loads_without_optional_benchmark_packages
+  E:\study documents\FYP\gmemory-reproduction\.venv\Lib\site-packages\matplotlib\_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+    parse = parser.parseString(pattern)
+
+tests/test_pddl_runtime.py::test_pddl_loads_without_optional_benchmark_packages
+tests/test_pddl_runtime.py::test_pddl_loads_without_optional_benchmark_packages
+tests/test_pddl_runtime.py::test_pddl_loads_without_optional_benchmark_packages
+tests/test_pddl_runtime.py::test_pddl_loads_without_optional_benchmark_packages
+tests/test_pddl_runtime.py::test_pddl_loads_without_optional_benchmark_packages
+tests/test_pddl_runtime.py::test_pddl_loads_without_optional_benchmark_packages
+  E:\study documents\FYP\gmemory-reproduction\.venv\Lib\site-packages\matplotlib\_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+    parser.resetCache()
+
+tests/test_pddl_runtime.py::test_pddl_loads_without_optional_benchmark_packages
+  E:\study documents\FYP\gmemory-reproduction\.venv\Lib\site-packages\matplotlib\_mathtext.py:45: PyparsingDeprecationWarning: 'enablePackrat' deprecated - use 'enable_packrat'
+    ParserElement.enablePackrat()
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+28 passed, 18 warnings in 26.85s

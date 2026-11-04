@@ -1,0 +1,209 @@
+{
+  "scope": "All observed retries in completed diagnostic no-memory arm; no raw exception bodies or credentials.",
+  "error_counts": {
+    "InternalServerError": 7,
+    "APITimeoutError": 2
+  },
+  "recovered_requests": [
+    {
+      "task_id": 0,
+      "logical_call_id": "d37e7bd674ec4144819f9b0113ed9b35",
+      "attempts": [
+        {
+          "call_id": "afe248d4bb21436d83e68cbd1646001b",
+          "time_utc": "2026-11-04T21:51:32.481808+00:00",
+          "attempt": 1,
+          "status": "error",
+          "error_type": "InternalServerError",
+          "http_status": 525,
+          "elapsed_seconds": 0.359
+        },
+        {
+          "call_id": "a64e215714014107b258f7c2828de08a",
+          "time_utc": "2026-11-04T21:51:34.844365+00:00",
+          "attempt": 2,
+          "status": "error",
+          "error_type": "APITimeoutError",
+          "http_status": null,
+          "elapsed_seconds": 45.0
+        },
+        {
+          "call_id": "13594839134f49f884c03dbd804c8bfb",
+          "time_utc": "2026-11-04T21:52:23.852374+00:00",
+          "attempt": 3,
+          "status": "ok",
+          "error_type": null,
+          "http_status": null,
+          "elapsed_seconds": 1.141
+        }
+      ],
+      "successful_return": true,
+      "unresolved_reserved_ca": 0.0228228
+    },
+    {
+      "task_id": 0,
+      "logical_call_id": "0b5cc7196c4540c3804e4c4342f3b1a6",
+      "attempts": [
+        {
+          "call_id": "7a6fbfcbc3d14652a688d967ea36af34",
+          "time_utc": "2026-11-04T21:56:51.438209+00:00",
+          "attempt": 1,
+          "status": "error",
+          "error_type": "APITimeoutError",
+          "http_status": null,
+          "elapsed_seconds": 45.0
+        },
+        {
+          "call_id": "464251e6814449b288df6814db7b183f",
+          "time_utc": "2026-11-04T21:57:38.448010+00:00",
+          "attempt": 2,
+          "status": "ok",
+          "error_type": null,
+          "http_status": null,
+          "elapsed_seconds": 1.484
+        }
+      ],
+      "successful_return": true,
+      "unresolved_reserved_ca": 0.023399250000000003
+    },
+    {
+      "task_id": 2,
+      "logical_call_id": "f245f1d0b86447dfbf723ddd2912dd05",
+      "attempts": [
+        {
+          "call_id": "b12d248025764a78a7377d6fa698172b",
+          "time_utc": "2026-11-04T22:08:16.939711+00:00",
+          "attempt": 1,
+          "status": "error",
+          "error_type": "InternalServerError",
+          "http_status": 525,
+          "elapsed_seconds": 0.391
+        },
+        {
+          "call_id": "5e450db1256a4c91a88b9f5afa98784b",
+          "time_utc": "2026-11-04T22:08:19.335519+00:00",
+          "attempt": 2,
+          "status": "ok",
+          "error_type": null,
+          "http_status": null,
+          "elapsed_seconds": 14.797
+        }
+      ],
+      "successful_return": true,
+      "unresolved_reserved_ca": 0.016913400000000002
+    },
+    {
+      "task_id": 2,
+      "logical_call_id": "5f825cb7f9534de7a67ddb4ed2f2fb6b",
+      "attempts": [
+        {
+          "call_id": "d6b81fbb3a6f415cb247862cf6188139",
+          "time_utc": "2026-11-04T22:10:46.440439+00:00",
+          "attempt": 1,
+          "status": "error",
+          "error_type": "InternalServerError",
+          "http_status": 525,
+          "elapsed_seconds": 5.063
+        },
+        {
+          "call_id": "f8ae33a9eeb54c01bbbd78c4efe1d6d4",
+          "time_utc": "2026-11-04T22:10:53.495541+00:00",
+          "attempt": 2,
+          "status": "ok",
+          "error_type": null,
+          "http_status": null,
+          "elapsed_seconds": 3.64
+        }
+      ],
+      "successful_return": true,
+      "unresolved_reserved_ca": 0.024129000000000005
+    },
+    {
+      "task_id": 3,
+      "logical_call_id": "b948ac599ad34d4e8e278b22e0072cd5",
+      "attempts": [
+        {
+          "call_id": "c70b1c257a8a4d2a8ba45a8be99a8efd",
+          "time_utc": "2026-11-04T22:13:48.080877+00:00",
+          "attempt": 1,
+          "status": "error",
+          "error_type": "InternalServerError",
+          "http_status": 525,
+          "elapsed_seconds": 5.062
+        },
+        {
+          "call_id": "85a5760e9a364abaa00945dc9dd0f816",
+          "time_utc": "2026-11-04T22:13:55.144817+00:00",
+          "attempt": 2,
+          "status": "ok",
+          "error_type": null,
+          "http_status": null,
+          "elapsed_seconds": 3.094
+        }
+      ],
+      "successful_return": true,
+      "unresolved_reserved_ca": 0.018539850000000004
+    },
+    {
+      "task_id": 3,
+      "logical_call_id": "fd3fbfb95cc34f3196680866850cc4a1",
+      "attempts": [
+        {
+          "call_id": "0f3225f1e1b5414185d89395b4e1fa4a",
+          "time_utc": "2026-11-04T22:13:58.256378+00:00",
+          "attempt": 1,
+          "status": "error",
+          "error_type": "InternalServerError",
+          "http_status": 525,
+          "elapsed_seconds": 4.453
+        },
+        {
+          "call_id": "f07e97a03ff4444894036d73dda29d88",
+          "time_utc": "2026-11-04T22:14:04.729810+00:00",
+          "attempt": 2,
+          "status": "error",
+          "error_type": "InternalServerError",
+          "http_status": 525,
+          "elapsed_seconds": 0.375
+        },
+        {
+          "call_id": "e6351753d27943c1a173f43c77bc7822",
+          "time_utc": "2026-11-04T22:14:09.144904+00:00",
+          "attempt": 3,
+          "status": "ok",
+          "error_type": null,
+          "http_status": null,
+          "elapsed_seconds": 1.594
+        }
+      ],
+      "successful_return": true,
+      "unresolved_reserved_ca": 0.038352300000000006
+    },
+    {
+      "task_id": 3,
+      "logical_call_id": "0516ff818e54488aa860706186a699b9",
+      "attempts": [
+        {
+          "call_id": "0338afd006fb4cd99780135afe6bc3c1",
+          "time_utc": "2026-11-04T22:14:10.751271+00:00",
+          "attempt": 1,
+          "status": "error",
+          "error_type": "InternalServerError",
+          "http_status": 525,
+          "elapsed_seconds": 5.062
+        },
+        {
+          "call_id": "ef9ade821c084622a8aef4034fff6832",
+          "time_utc": "2026-11-04T22:14:17.817969+00:00",
+          "attempt": 2,
+          "status": "ok",
+          "error_type": null,
+          "http_status": null,
+          "elapsed_seconds": 1.968
+        }
+      ],
+      "successful_return": true,
+      "unresolved_reserved_ca": 0.018820200000000002
+    }
+  ]
+}

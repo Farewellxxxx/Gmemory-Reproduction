@@ -43,14 +43,14 @@
 **Files:** `configs/reproduction.json`, local `runs/`, public `artifacts/first-run/`, `repro/analyze.py`.
 **Interfaces:** Consumes bounded runner; produces per-task results, call ledger, selected trace and memory snapshots.
 - [x] Freeze task selection before outcomes; verify identical manifests across arms and fresh independent memory directories.
-- [ ] Run GMemory and no-memory arms within shared total budget; checkpoint completed episodes.
-- [ ] Verify actual extraction, insight formation, retrieval, projector and persistence/reload; report any missing path honestly.
-- [ ] Analyze results, token/time/cost and failure modes; export sanitized reproducible evidence and commit.
+- [x] Run GMemory and no-memory arms within shared total budget; checkpoint completed episodes.
+- [x] Verify actual extraction, insight formation, retrieval, projector and persistence/reload; report any missing path honestly.
+- [x] Analyze results, token/time/cost and failure modes; export sanitized reproducible evidence and commit.
 
 ### Task 4: Teaching, review and publication
 **Files:** `README_zh.md`, `REPRODUCE_zh.md`, `PAPER_TO_CODE_zh.md`, `WALKTHROUGH_zh.md`, `REPORT_zh.md`, `RUNBOOK.md`.
 **Interfaces:** Consumes real artifacts; produces a clean clone-to-run guide and a trace-backed teaching narrative.
-- [ ] Explain each execution step, algorithm-to-code map, real cross-task example and limitations in Chinese.
+- [x] Explain each execution step, algorithm-to-code map, real cross-task example and limitations in Chinese.
 - [ ] Verify documented commands, test suite, artifact counts/costs, secret scanning and Git status.
 - [ ] Request a fresh whole-branch review; address material findings with regression checks.
 - [ ] Push approved output to `Farewellxxxx/Gmemory-Reproduction` and verify remote commit.

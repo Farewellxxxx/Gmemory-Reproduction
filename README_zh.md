@@ -17,6 +17,8 @@
 
 执行授权与方案记录在 [EXECUTION_PROMPT_zh.md](EXECUTION_PROMPT_zh.md)。实验配置在 [configs/reproduction.json](configs/reproduction.json)。
 
+本轮已完成：主实验两组均成功 2/24 题，平均进度率分别为 GMemory 25.12%、无记忆 29.72%；独立的 90 步搬球诊断分别成功 4/6、1/6 题。全部已知用量估算 14.60 CA，另保留约 0.18 CA 未决费用预留。完整边界与归因限制见报告。
+
 ## 本次怎样评价？
 
 两组使用同一份预先固定的 24 题清单（四个领域各 6 题）、相同题目顺序、模型和每题 30 步预算。GMemory 在题目结束后累积记忆，后续题目才能读取它；无记忆组保留当前题历史，但不复用过去题目。
@@ -32,6 +34,7 @@
 - `artifacts/audits/`：独立离线诊断证据，明确与真实模型实验区分。
 - `artifacts/interrupted-attempt/`：HTTP 525 中断的首次试跑；19 个已完成任务可用于教学，不计入最终配对成绩。
 - `artifacts/setup/`：模型连通性、可用型号及本地 embedding 文件哈希。
+- `artifacts/validation/`：全局用量、公开文件哈希和可离线执行的核对方法。
 - `tests/`：环境、存储、预算、统计与发布检查。
 - `repro/`：运行、下载、统计、重载验证和敏感信息扫描脚本。
 - `runs/`：你本机的新实验目录，默认忽略，不会随 Git 自动提交。

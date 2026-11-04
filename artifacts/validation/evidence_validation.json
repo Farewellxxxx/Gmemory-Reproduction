@@ -1,0 +1,54 @@
+{
+  "time_utc": "2026-11-04T22:24:34.048880+00:00",
+  "pairs": {
+    "primary": {
+      "gmemory": {
+        "completed": 24,
+        "api_calls": 837,
+        "hashed_export_files": 14,
+        "models_returned": [
+          "gpt-4o-mini-2024-07-18"
+        ]
+      },
+      "no_memory": {
+        "completed": 24,
+        "api_calls": 723,
+        "hashed_export_files": 7,
+        "models_returned": [
+          "gpt-4o-mini-2024-07-18"
+        ]
+      }
+    },
+    "diagnostic": {
+      "gmemory": {
+        "completed": 6,
+        "api_calls": 483,
+        "hashed_export_files": 14,
+        "models_returned": [
+          "gpt-4o-mini-2024-07-18"
+        ]
+      },
+      "no_memory": {
+        "completed": 6,
+        "api_calls": 547,
+        "hashed_export_files": 7,
+        "models_returned": [
+          "gpt-4o-mini-2024-07-18"
+        ]
+      }
+    }
+  },
+  "scope": "Offline validation of exported records, hashes, paired inputs and global usage accounting; not a model-quality test.",
+  "global_accounting": {
+    "total_attempts": 3262,
+    "settled_calls": 3252,
+    "prompt_tokens": 13552076,
+    "completion_tokens": 88873,
+    "estimated_ca": 14.602946399999997,
+    "unresolved_reservations": 10,
+    "unresolved_reserved_ca": 0.18079215,
+    "limit_ca": 50,
+    "deadline_utc": "2026-11-05T00:13:04+00:00"
+  },
+  "all_assertions_passed": true
+}

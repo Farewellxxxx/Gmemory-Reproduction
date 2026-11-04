@@ -1,0 +1,13 @@
+{
+  "memory_size": 6,
+  "graph_nodes": 6,
+  "graph_edges": 15,
+  "insights_equal": true,
+  "records_equal": true,
+  "language_model_calls": 0,
+  "retrieval_after_reload": {
+    "successful": 1,
+    "failed": 1,
+    "insights": 10
+  }
+}

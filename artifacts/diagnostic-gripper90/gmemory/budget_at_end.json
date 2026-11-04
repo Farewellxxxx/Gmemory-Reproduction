@@ -1,0 +1,14 @@
+{
+  "limit_ca": 50,
+  "deadline_utc": "2026-11-05T00:13:04+00:00",
+  "input_per_million": 1.05,
+  "output_per_million": 4.2,
+  "spent_ca": 12.061766850000016,
+  "prompt_tokens": 11173853,
+  "completion_tokens": 78386,
+  "settled_calls": 2714,
+  "pending": {
+    "351557e7cac64a5b90063e96b29f1d23": 0.01781535
+  },
+  "created_utc": "2026-11-04T18:33:53.202440+00:00"
+}

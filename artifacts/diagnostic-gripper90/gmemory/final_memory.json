@@ -1,0 +1,146 @@
+{
+  "memory_size": 6,
+  "graph_nodes": 6,
+  "graph_edges": 15,
+  "insights": [
+    {
+      "rule": "Ensure that all required items are accounted for and successfully relocated to the specified destination before concluding a task, because failing to do so can result in incomplete task fulfillment and hinder overall success.",
+      "score": 4,
+      "positive_correlation_tasks": [
+        "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. ",
+        "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. ",
+        "The goal is to satisfy the following conditions: ball1 is at roomb. , ball10 is at roomb. , ball11 is at roomb. , ball12 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. , ball9 is at roomb. ",
+        "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. ",
+        "The goal is to satisfy the following conditions: ball1 is at roomb. , ball10 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. , ball9 is at roomb. "
+      ],
+      "negative_correlation_tasks": []
+    },
+    {
+      "rule": "Focus on sequential task execution, because breaking down tasks into manageable steps enhances clarity and reduces errors.",
+      "score": 9,
+      "positive_correlation_tasks": [
+        "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. ",
+        "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. ",
+        "The goal is to satisfy the following conditions: ball1 is at roomb. , ball10 is at roomb. , ball11 is at roomb. , ball12 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. , ball9 is at roomb. ",
+        "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. ",
+        "The goal is to satisfy the following conditions: ball1 is at roomb. , ball10 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. , ball9 is at roomb. "
+      ],
+      "negative_correlation_tasks": []
+    },
+    {
+      "rule": "Utilize available resources efficiently and ensure all necessary actions are taken to achieve the desired outcome, because maximizing the use of tools and capabilities while confirming the completion of each step leads to improved task performance and successful completion of all requirements.",
+      "score": 8,
+      "positive_correlation_tasks": [
+        "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. ",
+        "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. ",
+        "The goal is to satisfy the following conditions: ball1 is at roomb. , ball10 is at roomb. , ball11 is at roomb. , ball12 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. , ball9 is at roomb. ",
+        "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. ",
+        "The goal is to satisfy the following conditions: ball1 is at roomb. , ball10 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. , ball9 is at roomb. "
+      ],
+      "negative_correlation_tasks": []
+    },
+    {
+      "rule": "Verify the completion of all required tasks before concluding, because ensuring that all objectives are met prevents oversight and guarantees task satisfaction.",
+      "score": 1,
+      "positive_correlation_tasks": [
+        "The goal is to satisfy the following conditions: ball1 is at roomb. , ball10 is at roomb. , ball11 is at roomb. , ball12 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. , ball9 is at roomb. ",
+        "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. ",
+        "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. ",
+        "The goal is to satisfy the following conditions: ball1 is at roomb. , ball10 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. , ball9 is at roomb. "
+      ],
+      "negative_correlation_tasks": [
+        "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. ",
+        "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. ",
+        "The goal is to satisfy the following conditions: ball1 is at roomb. , ball10 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. , ball9 is at roomb. "
+      ]
+    },
+    {
+      "rule": "Maintain awareness of the current state and available actions, because understanding the environment and options helps in making informed decisions and avoiding invalid actions.",
+      "score": 2,
+      "positive_correlation_tasks": [
+        "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. ",
+        "The goal is to satisfy the following conditions: ball1 is at roomb. , ball10 is at roomb. , ball11 is at roomb. , ball12 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. , ball9 is at roomb. "
+      ],
+      "negative_correlation_tasks": []
+    },
+    {
+      "rule": "Maintain a consistent approach for similar tasks, because applying the same method across related scenarios increases efficiency and reduces cognitive load.",
+      "score": 2,
+      "positive_correlation_tasks": [
+        "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. ",
+        "The goal is to satisfy the following conditions: ball1 is at roomb. , ball10 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. , ball9 is at roomb. ",
+        "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. ",
+        "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. "
+      ],
+      "negative_correlation_tasks": []
+    },
+    {
+      "rule": "Prioritize task completion order based on dependencies, because addressing prerequisite actions first ensures smoother progress and minimizes interruptions.",
+      "score": 2,
+      "positive_correlation_tasks": [
+        "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. ",
+        "The goal is to satisfy the following conditions: ball1 is at roomb. , ball10 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. , ball9 is at roomb. ",
+        "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. ",
+        "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. "
+      ],
+      "negative_correlation_tasks": []
+    },
+    {
+      "rule": "Maintain a clear tracking system for task progress, because monitoring ongoing actions and outcomes helps identify incomplete tasks and ensures all objectives are addressed.",
+      "score": 2,
+      "positive_correlation_tasks": [
+        "The goal is to satisfy the following conditions: ball1 is at roomb. , ball10 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. , ball9 is at roomb. ",
+        "The goal is to satisfy the following conditions: ball1 is at roomb. , ball10 is at roomb. , ball11 is at roomb. , ball12 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. , ball9 is at roomb. "
+      ],
+      "negative_correlation_tasks": []
+    },
+    {
+      "rule": "Maintain a checklist of required outcomes to ensure all objectives are tracked and completed, because systematic tracking prevents omissions and enhances task management.",
+      "score": 2,
+      "positive_correlation_tasks": [
+        "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. ",
+        "The goal is to satisfy the following conditions: ball1 is at roomb. , ball10 is at roomb. , ball11 is at roomb. , ball12 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. , ball9 is at roomb. "
+      ],
+      "negative_correlation_tasks": []
+    },
+    {
+      "rule": "Confirm the state of the environment after each action, because maintaining awareness of changes ensures adaptability and informed decision-making throughout the task.",
+      "score": 2,
+      "positive_correlation_tasks": [
+        "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. ",
+        "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. ",
+        "The goal is to satisfy the following conditions: ball1 is at roomb. , ball10 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. , ball9 is at roomb. "
+      ],
+      "negative_correlation_tasks": []
+    },
+    {
+      "rule": "Maintain awareness of the overall task requirements throughout the process, because losing sight of the end goal can lead to incomplete actions and unmet objectives.",
+      "score": 2,
+      "positive_correlation_tasks": [
+        "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. ",
+        "The goal is to satisfy the following conditions: ball1 is at roomb. , ball10 is at roomb. , ball11 is at roomb. , ball12 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. , ball9 is at roomb. "
+      ],
+      "negative_correlation_tasks": []
+    },
+    {
+      "rule": "Prioritize clear communication of task objectives, because understanding the goals ensures focused efforts and minimizes confusion during execution.",
+      "score": 2,
+      "positive_correlation_tasks": [
+        "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. ",
+        "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. ",
+        "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. ",
+        "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. "
+      ],
+      "negative_correlation_tasks": []
+    },
+    {
+      "rule": "Maintain a checklist of required items to ensure all objectives are met, because systematic tracking of tasks prevents omissions and enhances overall task completion.",
+      "score": 2,
+      "positive_correlation_tasks": [
+        "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. ",
+        "The goal is to satisfy the following conditions: ball1 is at roomb. , ball10 is at roomb. , ball11 is at roomb. , ball12 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. , ball9 is at roomb. "
+      ],
+      "negative_correlation_tasks": []
+    }
+  ]
+}

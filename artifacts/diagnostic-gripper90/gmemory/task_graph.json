@@ -1,0 +1,100 @@
+{
+  "directed": false,
+  "nodes": [
+    {
+      "id": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. "
+    },
+    {
+      "id": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. "
+    },
+    {
+      "id": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. "
+    },
+    {
+      "id": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball10 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. , ball9 is at roomb. "
+    },
+    {
+      "id": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball10 is at roomb. , ball11 is at roomb. , ball12 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. , ball9 is at roomb. "
+    },
+    {
+      "id": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at rooma. , ball4 is at rooma. "
+    }
+  ],
+  "links": [
+    {
+      "source": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. ",
+      "target": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. ",
+      "weight": 0.9603365547955036
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. ",
+      "target": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. ",
+      "weight": 0.9482884928584099
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. ",
+      "target": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball10 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. , ball9 is at roomb. ",
+      "weight": 0.9255926012992859
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. ",
+      "target": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball10 is at roomb. , ball11 is at roomb. , ball12 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. , ball9 is at roomb. ",
+      "weight": 0.9039643853902817
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. ",
+      "target": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at rooma. , ball4 is at rooma. ",
+      "weight": 0.9853469524532557
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. ",
+      "target": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. ",
+      "weight": 0.9868879858404398
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. ",
+      "target": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball10 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. , ball9 is at roomb. ",
+      "weight": 0.9674441292881966
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. ",
+      "target": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball10 is at roomb. , ball11 is at roomb. , ball12 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. , ball9 is at roomb. ",
+      "weight": 0.9522645957767963
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. ",
+      "target": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at rooma. , ball4 is at rooma. ",
+      "weight": 0.9485772848129272
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. ",
+      "target": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball10 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. , ball9 is at roomb. ",
+      "weight": 0.9843506310135126
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. ",
+      "target": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball10 is at roomb. , ball11 is at roomb. , ball12 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. , ball9 is at roomb. ",
+      "weight": 0.9721216894686222
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. ",
+      "target": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at rooma. , ball4 is at rooma. ",
+      "weight": 0.9387496560811996
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball10 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. , ball9 is at roomb. ",
+      "target": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball10 is at roomb. , ball11 is at roomb. , ball12 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. , ball9 is at roomb. ",
+      "weight": 0.9948460813611746
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball10 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. , ball9 is at roomb. ",
+      "target": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at rooma. , ball4 is at rooma. ",
+      "weight": 0.9101682230830193
+    },
+    {
+      "source": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball10 is at roomb. , ball11 is at roomb. , ball12 is at roomb. , ball2 is at roomb. , ball3 is at roomb. , ball4 is at roomb. , ball5 is at roomb. , ball6 is at roomb. , ball7 is at roomb. , ball8 is at roomb. , ball9 is at roomb. ",
+      "target": "The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at rooma. , ball4 is at rooma. ",
+      "weight": 0.8882589042186737
+    }
+  ]
+}

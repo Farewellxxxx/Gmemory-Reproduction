@@ -1,0 +1,13 @@
+{
+  "scope": "Compare recorded chat payload fields for primary-no-memory task6 and diagnostic-no-memory task0; same PDDL problem. Not an identity test of the backend model.",
+  "same_answer_count": 0,
+  "different_answers": [
+    {
+      "payload_sha256": "9e21726d88f86e3f9117c28d433634d3651d16bccb4c8bc7c5b6a49a4b83a64b",
+      "first_call_id": "5635939b65504503b5bc74452405b74f",
+      "second_call_id": "c8acf7abd4c146b198ad59525b0f2413",
+      "first_answer": "think: I need to move block 1 first because it is the first object I need to relocate to roomb.",
+      "second_answer": "think: I need to move ball1 first because it is the first object I need to relocate to roomb.  "
+    }
+  ]
+}
