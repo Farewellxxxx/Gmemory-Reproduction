@@ -58,7 +58,7 @@ class PDDLEnv(BaseEnv):
         self.last_obs = None
 
     def set_env(self, configs: dict) -> tuple[str, str]: 
-        nltk.download('punkt')
+        # Install punkt/punkt_tab once during setup; task execution is offline.
         
         self.game_name: str = configs.get('game_name')
         problem_index: int = configs.get('problem_index')
@@ -75,6 +75,9 @@ class PDDLEnv(BaseEnv):
 
     def reset(self):
         obs, debug_info = self.env.reset()
+        # A reset starts a new observation context. Otherwise barman/tyreworld
+        # delta rendering compares against the previous episode and can be empty.
+        self.last_obs = None
         self.goal, self.init_obs, self.goal_literals = self._get_goal_and_obs(obs) # g & s0
         self.last_obs = obs
         self.infos = dict()

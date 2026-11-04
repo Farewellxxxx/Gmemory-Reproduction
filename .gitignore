@@ -1,0 +1,14 @@
+.venv/
+.env
+.env.*
+!.env.example
+.private/
+.cache/
+.db/
+.superpowers/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.pytest_tmp*/
+runs/
+*.sqlite3

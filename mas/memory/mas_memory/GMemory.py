@@ -441,10 +441,14 @@ class TaskLayer:
                 valid_nodes.append(node)
 
         X = np.vstack(embeddings)
-        fin = FINCH(metric='cosine')
-
         try: 
-            labels = fin.fit_predict(X)
+            # finch-clust==0.2.0 exposes a function, not a sklearn estimator.
+            # Use its first (finest) hierarchical partition explicitly.
+            if len(valid_nodes) == 1:
+                labels = np.zeros(1, dtype=int)
+            else:
+                partitions, _, _ = FINCH(X, distance='cosine', verbose=False)
+                labels = partitions[:, 0]
         except Exception as e:   
             print(f"FINCH clustering failed: {e}")
             labels = np.zeros(len(valid_nodes), dtype=int)
